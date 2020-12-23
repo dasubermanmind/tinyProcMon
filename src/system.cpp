@@ -4,8 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "process.h"
-#include "processor.h"
+#include "Process.h"
 #include "system.h"
 
 using std::set;
@@ -15,10 +14,6 @@ using std::vector;
 
 
 // TODO: Might need to better define each of these subroutines
-Processor& System::Cpu() { 
-    return cpu_;
-}
-
 vector<Process>& System::Processes() { 
     return processes_;
     

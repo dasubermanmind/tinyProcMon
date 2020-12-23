@@ -1,26 +1,23 @@
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
-#include<string>
 #include <vector>
+#include "Process.h"
 
-#include "process.h"
-#include<processor.h>
+using namespace std;
 
 class System {
- public:
-  Processor& Cpu();                   
-  std::vector<Process>& Processes();  
+ public:               
+  vector<Process>& Processes();  
   float MemoryUtilization();          
   long UpTime();                     
   int TotalProcesses();               
   int RunningProcesses();             
-  std::string Kernel();              
-  std::string OperatingSystem();     
+  string Kernel();              
+  string OperatingSystem();     
 
  private:
-  Processor cpu_ = {};
-  std::vector<Process> processes_ = {};
+  vector<Process> processes_ = {};
 };
 
 #endif
