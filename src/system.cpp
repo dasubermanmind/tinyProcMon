@@ -3,9 +3,8 @@
 #include <set>
 #include <string>
 #include <vector>
-
-#include "Process.h"
-#include "system.h"
+#include"system.h"
+#include "process.h"
 
 using std::set;
 using std::size_t;
@@ -14,38 +13,37 @@ using std::vector;
 
 
 // TODO: Might need to better define each of these subroutines
-vector<Process>& System::Processes() { 
-    return processes_;
-    
- }
+//vector<Process>& System::Process() {
+//    return vector<Process>(1);
+// }
 
-std::string System::Kernel() { 
+std::string System::Kernel() {
     return string();
 
 }
 
-float System::MemoryUtilization() { 
+float System::MemoryUtilization() {
     return 0.0;
  }
 
-std::string System::OperatingSystem() { 
-    
+std::string System::OperatingSystem() {
+
     return string();
-    
+
  }
 
-int System::RunningProcesses() { 
+int System::RunningProcesses() {
     return 0;
-    
+
  }
 
-int System::TotalProcesses() { 
+int System::TotalProcesses() {
     return 0;
-    
+
  }
 
-long int System::UpTime() { 
-    
+long int System::UpTime() {
+
     return 0;
-    
+
  }
